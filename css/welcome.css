@@ -1,0 +1,174 @@
+
+        @font-face {
+    font-family: 'Caveat';
+    src: url('/media/EduNSWACTFoundation-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    
+        #convertButton {
+    color: yellow !important;
+}
+    
+    
+ @keyframes blinker {  
+            50% { opacity: 0; }
+        }
+
+        .blink-text {
+            animation: blinker 1s linear infinite;
+            color: purple; /* 设置颜色为紫色 */
+            font-size: 25px; /* 增加字体大小 */
+            font-weight: bold; /* 加粗字体 */
+            text-align: center; /* 居中文本 */
+            padding: 10px 0; /* 增加上下内边距 */
+            position: fixed; 
+            top: 0; 
+            width: 40%;
+        }
+    
+    
+    
+    
+        /* 弹窗背景 */
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        /* 弹窗内容 */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+
+        /* 关闭按钮 */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 弹窗内的超链接样式 */
+        .modal-content a {
+            display: inline-block;
+            /* 使链接填充整个块区域 */
+            margin: 10px 0;
+            /* 添加上下外边距 */
+            padding: 10px 20px;
+            /* 内边距 */
+            background-color: #FFFFFF;
+            /* 背景颜色 */
+            color: white;
+            /* 字体颜色 */
+            text-decoration: none;
+            /* 去除下划线 */
+            border-radius: 5px;
+            /* 圆角 */
+            transition: background-color 0.3s ease;
+            /* 平滑背景颜色过渡 */
+        }
+
+        /* 弹窗内的超链接悬停效果 */
+        .modal-content a:hover {
+            background-color: #0056b3;
+            /* 悬停时的背景颜色 */
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .sublink {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #e7e7e7;
+            padding: 10px;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+
+        #copyButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #copyButton:hover {
+            background-color: #45a049;
+        }
+
+
+        #backButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6495ED;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #backButton:hover {
+            background-color: #4169E1;
+        }
+
+        .contact-button {
+            
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            /* 移除链接的下划线 */
+            display: inline-block;
+            /* 使链接看起来像按钮 */
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+   

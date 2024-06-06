@@ -1,0 +1,64 @@
+/* 基础样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 10px;
+    color: #333;
+    line-height: 1.5; /* 增加行间距 */
+}
+
+h1 {
+    color: #5a5a5a;
+    margin-bottom: 10px; /* 减少标题与内容之间的间隔 */
+}
+
+form {
+    margin-top: 15px;
+    margin-bottom: 15px; /* 增加表单之间的间隔 */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* 增加填充，使按钮更易点击 */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18px; /* 增加按钮文字大小 */
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90%; /* 让按钮宽度占比更适合手机屏幕 */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 22px 44px;
+    }
+}

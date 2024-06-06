@@ -1,0 +1,222 @@
+/* 特定标签的样式 */
+.label-api-select {
+    background-color: #6a0dad; /* 紫色背景 */
+    color: #ff0; /* 黄色文字 */
+    padding: 10px 20px; /* 增加内部填充，使背景更大 */
+    border-radius: 10px; /* 边框圆滑处理 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    transition: box-shadow 0.3s ease-in-out; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬浮时的效果 */
+.label-api-select:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* 悬浮时阴影更大更深 */
+}
+
+/* 选择框的样式 */
+.select-api-select {
+    background-color: #f8f8f8; /* 浅灰色背景 */
+    color: #333; /* 深色文字，提高可读性 */
+    padding: 10px 20px; /* 增加内部填充，使背景更大 */
+    border-radius: 10px; /* 边框圆滑处理 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影 */
+    border: none; /* 去除默认边框 */
+   
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬浮时的选择框背景颜色变更 */
+.select-api-select:hover {
+    background-color: #e6e6e6; /* 悬浮时更改背景颜色 */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* 悬浮时阴影更大更深 */
+}
+
+
+table {
+    width: 100%;
+    overflow-x: auto; /* 添加滚动 */
+}
+
+ @media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* 在较小屏幕上减少宽度 */
+    }
+
+    table, th, td {
+        font-size: 14px; /* 减小文字大小以适应较小屏幕 */
+    }
+
+    .button {
+        font-size: 18px; /* 调整按钮大小更适合触摸操作 */
+    }
+
+    /* 更多针对小屏幕的样式调整... */
+}
+
+ 
+ 
+ /* 齿轮旋转动画 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.gear {
+    height: 50px;
+    width: 50px;
+    animation: spin 0.8s linear infinite;
+}
+
+/* 模态框（Modal）样式 */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定位置 */
+    z-index: 1; /* 置于顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 宽度100% */
+    height: 100%; /* 高度100% */
+    overflow: auto; /* 启用滚动 */
+    background-color: rgba(0,0,0,0.4); /* 黑色背景，透明度 */
+}
+
+/* 模态框内容 */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* 添加动画 */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* 关闭按钮 */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    background-color: #e0e0e0; /* 淡灰色背景 */
+    border-radius: 50%; /* 圆形 */
+}
+
+/* 进度条容器 */
+.progress-container {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* 进度条 */
+.progress-bar {
+    width: 1%;
+    height: 30px;
+    background-color: #9C27B0; /* 蓝灰色 */
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+    
+    #convertButton {
+    color: yellow !important;
+}
+
+    
+    @font-face {
+    font-family: 'Caveat';
+    src: url('/media/EduNSWACTFoundation-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .button {
+            font-family: 'Caveat', sans-serif;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #6a0dad; /* 设置为紫色 */
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            margin: 10px 0;
+           transition: background-color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+
+        .button:hover, .button:focus {
+    background-color: #ab47bc;
+    box-shadow: 0 2px #666;
+    transform: translateY(-2px);
+}
+       .button:active, .button.pressed { /* 添加.pressed类 */
+    background-color: #ab47bc; /* 按下去的颜色 */
+    box-shadow: 0 1px #666; /* 减少阴影，增强按下去的感觉 */
+    transform: translateY(6px); /* 增加下压的距离 */
+    transition: transform 0.1s ease; /* 加快按下去的过渡速度 */
+}
+
+
+.button.pressed {
+    transition: transform 1s ease; /* 增加回弹的过渡速度 */
+}
+
+  

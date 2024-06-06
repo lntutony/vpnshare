@@ -1,0 +1,95 @@
+
+     .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .button-link:hover {
+        background-color: #0056b3;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 300px; /* Adjust this in media query */
+            max-width: 100%;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            color: #fff;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%; /* Use a percentage to give some margin on the sides */
+                padding: 20px; /* Reduce padding on smaller screens */
+            }
+            
+            h1 {
+                font-size: 20px; /* Slightly reduce font size */
+                margin-bottom: 15px;
+            }
+            
+            input[type="text"],
+            input[type="password"] {
+                padding: 8px; /* Adjust padding */
+                margin-bottom: 10px; /* Reduce margin */
+            }
+            
+            input[type="submit"] {
+                padding: 12px; /* Adjust padding for better touch */
+            }
+
+            footer {
+                left: 50%; /* Center the footer correctly on mobile */
+                bottom: 0;
+                transform: translateX(-50%);
+                width: 100%; /* Make the footer full width */
+                padding: 5px; /* Adjust padding */
+                font-size: 0.7em; /* Adjust font size for smaller screens */
+            }
+        }
